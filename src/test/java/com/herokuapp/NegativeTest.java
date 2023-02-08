@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class NegativeTest {
 
-        @Test
+        @Test(priority = 2, groups = {"regression"})
         public void negative()
 
     {

@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Login Test" verbose="1" >
+    <parameter name="user"  value="tomsmith"/>
+    <parameter name="password1"  value="SuperSecretPassword!"/>
+    <parameter name="userNeg"  value="tomsmith1"/>
+    <parameter name="passNeg"  value="SuperSecretPassword!"/>
+
+
+    <test name="Positive Login" >
+        <classes>
+            <class name="com.herokuapp.LoginTests" />
+        </classes>
+    </test>
+
+    <!--<test name="Negative Login">
+        <classes>
+            <class name="com.herokuapp.NegativeTest"/>
+
+        </classes>
+    </test>-->
+</suite>
